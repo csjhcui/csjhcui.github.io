@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Homes on jhcui</title>
+    <title>Homes on JHCUI</title>
     <link>https://csjhcui.github.io/home/</link>
-    <description>Recent content in Homes on jhcui</description>
+    <description>Recent content in Homes on JHCUI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
@@ -18,43 +18,9 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0800</pubDate>
       
       <guid>https://csjhcui.github.io/home/about/</guid>
-      <description>About me  I am an Assistant Professor in the School of Computer Science and Technology at xxx. Before that, I received my PhD in the School of Electronic and Information Engineering at Xi’an Jiaotong University in 2018. My research focuses on improving performance, reliability of storage systems..</description>
-    </item>
-    
-    <item>
-      <title>Selected Publications</title>
-      <link>https://csjhcui.github.io/home/publications_selected/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0800</pubDate>
-      
-      <guid>https://csjhcui.github.io/home/publications_selected/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Recent Publications</title>
-      <link>https://csjhcui.github.io/home/publications/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0800</pubDate>
-      
-      <guid>https://csjhcui.github.io/home/publications/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Recent &amp; Upcoming Talks</title>
-      <link>https://csjhcui.github.io/home/talks/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0800</pubDate>
-      
-      <guid>https://csjhcui.github.io/home/talks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Recent Posts</title>
-      <link>https://csjhcui.github.io/home/posts/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0800</pubDate>
-      
-      <guid>https://csjhcui.github.io/home/posts/</guid>
-      <description></description>
+      <description> I am an Assistant Professor in the School of Computer Science and Technology at xxx University. Before that, I received my PhD in the School of Electronic and Information Engineering at Xi’an Jiaotong University in 2018. My research focuses on improving performance, reliability of storage systems.
+I’m looking for motivated students. If you are interested in doing research with me, please feel free to contact me via email.
+Recent News  Aug 2018 ：I will be joining CS department @ xxxx in Fall 2018  </description>
     </item>
     
     <item>
@@ -67,13 +33,51 @@
     </item>
     
     <item>
-      <title>Custom Section</title>
+      <title>Publications</title>
+      <link>https://csjhcui.github.io/home/publications_selected/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0800</pubDate>
+      
+      <guid>https://csjhcui.github.io/home/publications_selected/</guid>
+      <description>Jinhua Cui, Youtao Zhang, Liang Shi, Chun Jason Xue, Weiguo Wu, and Jun Yang. ApproxFTL: On the Performance and Lifetime Improvement of 3D NAND Flash based SSDs. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2017.
+ Jinhua Cui, Youtao Zhang, Weiguo Wu, Jun Yang, Yinfeng Wang, and Jianhang Huang. DLV: Exploiting Device Level Latency Variations for Performance Improvement on Flash Memory Storage Systems. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2017.</description>
+    </item>
+    
+    <item>
+      <title>Patents</title>
+      <link>https://csjhcui.github.io/home/publications/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0800</pubDate>
+      
+      <guid>https://csjhcui.github.io/home/publications/</guid>
+      <description>Jinhua Cui, Weiguo Wu, Yinfeng Wang, and Zhangfeng Duan. An Efficient Cache Management Method of NAND Flash Memory Database System. Patent No.: 201410216063.0, Date: 04/01/2017.
+ Wei Wei, Weiguo Wu, and Jinhua Cui. A Data Block Placement Strategy in HDFS based on Historical Information. Patent No.: 201410475802.8, Date:06/20/2017.
+ Zhangfeng Duan, Weiguo Wu, Depei Qian, and Jinhua Cui. A Read-optimized T-Tree Index in Memory Database. Patent No.: 201410122539.4, Date:06/20/2017.</description>
+    </item>
+    
+    <item>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>https://csjhcui.github.io/home/talks/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0800</pubDate>
+      
+      <guid>https://csjhcui.github.io/home/talks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OpenSoft</title>
+      <link>https://csjhcui.github.io/home/posts/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0800</pubDate>
+      
+      <guid>https://csjhcui.github.io/home/posts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Teaching</title>
       <link>https://csjhcui.github.io/home/teaching/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0800</pubDate>
       
       <guid>https://csjhcui.github.io/home/teaching/</guid>
-      <description>This is an example of using the custom widget to create your own homepage section.
-To remove this section, either delete content/home/teaching.md or edit the frontmatter of the file to deactivate the widget by setting active = false.</description>
+      <description></description>
     </item>
     
     <item>
@@ -86,7 +90,7 @@ To remove this section, either delete content/home/teaching.md or edit the front
     </item>
     
     <item>
-      <title>Contact</title>
+      <title>Services</title>
       <link>https://csjhcui.github.io/home/contact/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0800</pubDate>
       

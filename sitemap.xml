@@ -5,7 +5,7 @@
     
     <url>
     
-      <loc>https://csjhcui.github.io/post/</loc>
+      <loc>https://csjhcui.github.io/posts/</loc>
       <lastmod>2017-01-01T00:00:00+08:00</lastmod>
     </url>
     
@@ -41,6 +41,16 @@
     
     <url>
     
+      <loc>https://csjhcui.github.io/</loc>
+      <lastmod>2016-04-20T00:00:00+08:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://csjhcui.github.io/publication_types/</loc>
       <priority>0</priority>
     </url>
@@ -51,16 +61,6 @@
     <url>
     
       <loc>https://csjhcui.github.io/tags/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://csjhcui.github.io/</loc>
-      <lastmod>2016-04-20T00:00:00+08:00</lastmod>
       <priority>0</priority>
     </url>
     
