@@ -9,6 +9,122 @@
 }
 </style></head>
 
+
+<style>
+	body{
+		font:15px "Verdana", Verdana, serif;
+	}
+	ol{
+		margin: 1em 0;
+		padding: 0 0 0 30px;
+		list-style-type: circle;
+	}
+	li {
+		margin: 10px 0;
+	}
+	p.big {
+		line-height: 1.75;
+		margin-top: 0px;
+		padding: 0 0 0 10px;
+	}
+	h3.big {
+		margin-bottom: 0px;
+	}
+	.button {
+		appearance: button;
+		text-align: center;
+		text-decoration: none;  
+		font-size: 14px; 
+		padding: 0px 2px;
+		color: black;
+		display: inline-block;
+		border: 1px solid #002b5b;
+		background-color: white;
+		border-radius: 4px;
+	}
+	.button:hover {
+		background-color: #002b5b;
+		color: white;
+	}
+
+	.buttonspecial {
+		appearance: button;
+		text-align: center;
+		text-decoration: none;  
+		font-size: 14px; 
+		padding: 0px 2px;
+		color: white;
+		display: inline-block;
+		border: 1px solid #20548b;
+		background-color: #002b5b;
+		border-radius: 4px;
+	}
+	.buttonspecial:hover {
+		background-color: #002b5b;
+		color: yellow;
+	}
+
+	.paperbutton {
+		appearance: button;
+		text-align: center;
+		font-size: 15px; 
+		padding: 0px 0px;
+		border: ;  
+		background-color: white;
+		color: black;
+		border-radius: 4px;
+	}
+	.paperbutton:hover {
+		background-color: #002b5b;
+		color: white;
+		text-decoration: none;  
+	}	
+	.mediabutton {
+		appearance: button;
+		text-align: center;
+		text-decoration: none;  
+		font-size: 14px; 
+		padding: 0px 2px;
+		color: #013ADF;
+		border: 1px solid #013ADF;  
+		background-color: white;
+		border-radius: 4px;
+	}
+	.mediabutton:hover {
+		background-color: #013ADF;
+		color: white;
+	}	
+</style>
+
+<script src="https://www.google-analytics.com/analytics.js" async="true"></script>
+<script src="https://www.google-analytics.com/analytics.js" async="true"></script>
+<script src="https://www.google-analytics.com/analytics.js" async="true"></script>
+<script src="https://www.google-analytics.com/analytics.js" async="true"></script>
+
+<script type="text/javascript">
+	function show(x) {
+		var pubs = document.getElementsByClassName('pub');
+		for (var i=0; i<pubs.length; i++) {
+			if ((" "+pubs[i].className+" ").indexOf(" "+x+" ") >= 0) {
+				pubs[i].style.display = "inline";
+				pubs[i].style.opacity = '1';
+			} else {
+				pubs[i].style.display = "none";
+				pubs[i].style.opacity = '0';
+			}
+		}
+	}
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-76469747-1', 'auto');
+  ga('send', 'pageview');
+</script>
 <body>
 
 <p><img border="0" src="img/jhcui.png" width="189" height="236"></p>
@@ -16,18 +132,27 @@
 	<font size="7" face="Times New Roman">Jinhua Cui</font><p style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" align="left"><font size="5" face="Times New Roman"><i> Assistant Professor</i></font></p>
 
   
-          <font size="4" face="Times New Roman"><i><a href="http://cs.hust.edu.cn/">School of Computer Science and Technology</a><br><a href="http://www.hust.edu.cn/">Huazhong University of Science and Technology</a></i></font>
-            <p></p>
-            <p align="left"><i><font size="4" face="Times New Roman">Email: <font color="#0000ff">cjhnicole at gmail dot com</font></font></i></p></div>
+<font size="4" face="Times New Roman">
+<i>
+<a href="http://cs.hust.edu.cn/">School of Computer Science and Technology</a>
+<br>
+<a href="http://www.hust.edu.cn/">Huazhong University of Science and Technology</a>
+</i>
+</font>
+<p></p>
+<p align="left"><i><font size="4" face="Times New Roman">Email: cjhnicole at gmail dot com</font></i></p></div>
 <hr>
 
 
-<div style="MARGIN: 0px; FLOAT: left" align="left"><font size="4">[ <a class="intlink" href="#Biography">Bio</a> | 
-      <a class="intlink" href="#Research Interests">Recent News</a> | <a class="intlink" href="#Publications">Publications</a> 
-      | <a class="intlink" href="#Honorables Awarded">Honors </a>| <a class="intlink" href="#Professional Services">Services</a>]
+<div style="MARGIN: 0px; FLOAT: left" align="left"><font size="4">[ 
+<a class="intlink" href="#Biography">Bio</a> | 
+<a class="intlink" href="#Research">Research Interests</a> | 
+<a class="intlink" href="#Publications">Publications</a> | 
+<a class="intlink" href="#Honorables Awarded">Honors </a>| 
+<a class="intlink" href="#Professional Services">Services</a>]
 </font>
 <br></div>
-	<p></p>
+<p></p>
 <p></p>
 
 <br><hr>
@@ -38,56 +163,137 @@
 <b><font color="#000000" size="5">Bio</font></b></strong></font></p>
 
 <font face="Times New Roman" size="4">
-I am an Assistant Professor in the School of Computer Science and Technology at Huazhong University of Science and Technology. Before that, I received my PhD in the School of Electronic and Information Engineering at <a href="http://www.xjtu.edu.cn/">Xi'an Jiaotong University</a> in 2018. I was also a visiting PhD student in the Computer Science Department at <a href="http://www.xjtu.edu.cn/">University of Pittsburgh</a>, Pittsburgh, PA, USA. My research focuses on improving performance, reliability of storage systems.<p align="left"><i><strong>I'm looking for motivated students. If you are interested in doing research with me, please feel free to contact me via email.</strong></i></p></font>        
+I am an Assistant Professor in the School of Computer Science and Technology at Huazhong University of Science and Technology. Before that, I received my PhD in the School of Electronic and Information Engineering at <a href="http://www.xjtu.edu.cn/">Xi'an Jiaotong University</a> in 2018. I was also a visiting PhD student in the Computer Science Department at <a href="">University of Pittsburgh</a>, Pittsburgh, PA, USA. My research focuses on improving performance, reliability of storage systems, etc. My papers have been published in major conferences and journals, including TCAD, TCE, MSST, DATE, NPC, etc.
+<p align="left"><i><strong><span style="color:#ff0000">I'm looking for motivated students. If you are interested in doing research with me, please feel free to contact me via email.</span></strong></i></p></font>        
 
-<p class="style7 style8"><font face="Times New Roman"><strong><a name="Research Interests"></a>
+
+<p class="style7 style8"><font face="Times New Roman"><strong><a name="Research"></a>
+<b><font color="#000000" size="5">Research Interests</font></b></strong></font></p>
+<font face="Times New Roman" size="4">
+
+<li style=""><font face="Times New Roman" size="4">Flash Memory and Non-Volatile Memory Storage Systems</font></li>
+
+Flash memory based solid-state drives (SSDs) are widely adopted in the modern computer system, ranging from mobile devices to servers in data centers, due to their better read and write performance and lower power consumption over traditional mechanical hard drives(HDDs). In flash memory industry, three-dimensional (3D) NAND flash is one of the most prospective advances. While the capacity of 3D flash memory grows dramatically, the performance and reliability problems of 3D flash based storage system are also quickly exaggerated. How to resolve new constraints of 3D flash memory chips, such as severe program disturbance, and performance/reliability degradation issues provides strong motivation of this research direction. Our current effort in this direction includes the following research topics:
+
+<p style='margin-left:60.0pt;text-indent:-18.0pt;mso-list:l1 level1 lfo5;
+tab-stops:list 36.0pt'><![if !supportLists]><span lang=EN-US><span
+style='mso-list:Ignore'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-US>Design and develop advanced flash storage system with high performance</span></p>
+
+<p style='margin-left:60.0pt;text-indent:-18.0pt;mso-list:l1 level1 lfo5;
+tab-stops:list 36.0pt'><![if !supportLists]><span lang=EN-US><span
+style='mso-list:Ignore'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-US>Design and develop advanced flash storage system with high reliability</span></p>
+
+<p style='margin-left:60.0pt;text-indent:-18.0pt;mso-list:l1 level1 lfo5;
+tab-stops:list 36.0pt'><![if !supportLists]><span lang=EN-US><span
+style='mso-list:Ignore'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-US>System design of other new type non-volatile memories, such as 3D XPoint</span></p>
+
+<p class="style7 style8"><font face="Times New Roman"><strong><a name=¡°News¡±></a>
 <b><font color="#000000" size="5">Recent News</font></b></strong></font></p><font face="Times New Roman" size="4"><li style="">Aug 2018: I will join CS department @ HUST in Fall 2018</li></font><tr><td>&nbsp;</td></tr>
-
-
 </font>
 
+<hr>
+
 <p class="style7 style8"><font face="Times New Roman"><strong><a name="Publications"></a>
-<b><font color="#000000" size="5">Publications</font></b></strong></font></p>
-  
+<b><font color="#000000" size="5">Publications (<a href="https://scholar.google.com/" target="_blank">Google Scholar</a>)</font></b></strong></font></p>
+ <p class="big">Venues:
+	<button class="button" onclick="show('all')">All</button>
+	<button class="button" onclick="show('journal')">Journal</button>
+	<button class="button" onclick="show('conf')">Conference</button>
+</p> 
 <p>
-
 <font face="Times New Roman"> <font color="#000000" size="4">
+<ol>
+<div class="pub all conf"><li>
+<a href="https://csjhcui.github.io/research/ShadowGC.pdf"><u>ShadowGC: Cooperative Garbage Collection with Multi-level Buffer for Performance Improvement in NAND flash-based SSDs</u></a>
+<a class="button" href="" target="_blank">slides</a>
+<br /> Jinhua Cui, Youtao Zhang, Jianhang Huang, Weiguo Wu, and Jun Yang
+<br /> The 21st Design, Automation and Test in Europe (DATE¡¯18), Dresden, Germany, March 2018  
+</li></div>
 
-[1]. Jinhua Cui, Youtao Zhang, Liang Shi, Chun Jason Xue, Weiguo Wu, and Jun Yang. ApproxFTL: On the Performance and Lifetime Improvement of 3D NAND Flash based SSDs. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2017.
+<div class="pub all journal"><li>
+<a href="https://csjhcui.github.io/research/DLV.pdf"><u>DLV: Exploiting Device Level Latency Variations for Performance Improvement on Flash Memory Storage Systems</u></a>
+<br /> Jinhua Cui, Youtao Zhang, Weiguo Wu, Jun Yang, Yinfeng Wang, and Jianhang Huang
+<br /> IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2018, 37 (8): 1546~1559
+</li></div>
 
- <br><br>
+<div class="pub all journal"><li>
+<a href="https://csjhcui.github.io/research/Object.pdf"><u>Object Placement Algorithm Based on Arc and Two-layer Mapping</u></a>
+<br /> Shiqiang Nie, Weiguo Wu, Jinhua Cui, Shangshan Xue, and Zhaohua Liu
+<br /> Journal of  Xi'an Jiaotong University, 2018, 52 (6): 30~35OO
+</li></div>
 
-[2]. Jinhua Cui, Youtao Zhang, Weiguo Wu, Jun Yang, Yinfeng Wang, and Jianhang Huang. DLV: Exploiting Device Level Latency Variations for Performance Improvement on Flash Memory Storage Systems. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2017.
- <br><br>
+<div class="pub all journal"><li>
+<a href="https://csjhcui.github.io/research/ApproxFTL.pdf">ApproxFTL: On the Performance and Lifetime Improvement of 3D NAND Flash based SSDs</a>
+<br /> Jinhua Cui, Youtao Zhang, Liang Shi, Chun Jason Xue, Weiguo Wu, and Jun Yang
+<br /> IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2017  
+</li></div>
 
-[3]. Jinhua Cui, Youtao Zhang, Jianhang Huang, Weiguo Wu, and Jun Yang. ShadowGC: Cooperative Garbage Collection with Multi-level Buffer for Performance Improvement in NAND flash-based SSDs. The 21st Design, Automation and Test in Europe (DATE), Dresden, Germany, March 2018. 
- <br><br>
+<div class="pub all journal"><li>
+<a href="https://csjhcui.github.io/research/MIMU.pdf">Improved Kalman Filtering Method for MIMU with Colored Noises</a>
+<br /> Xiong Xue, MinHua Guo, WeiJie Li, Jin Zhao, and Jinhua Cui
+<br /> Journal of Chinese Inertial Technology, 2017, 25 (1): 33~36  
+</li></div>
 
-[4]. Jinhua Cui, Weiguo Wu, Xingjun Zhang, Jianhang Huang, Yinfeng Wang. Exploiting Latency Variation for Access Conflict Reduction of NAND Flash Memory. IEEE 33rd International Conference on Massive Storage Systems and Technology (MSST), Santa Clara, USA, 2016.
- <br><br>
 
-[5]. Jinhua Cui, Weiguo Wu, Shiqiang Nie,Jianhang Huang, Zhuang Hu, Nianjun Zou, and Yinfeng Wang. VIOS: A Variation-aware I/O Scheduler for Flash-based Storage Systems. The 13th IFIP International Conference on Network and Parallel Computing (NPC), Xi'an, China, 2016: 3~16.
- <br><br>
+<div class="pub all conf"><li>
+<a href="https://csjhcui.github.io/research/MSST.pdf">Exploiting Latency Variation for Access Conflict Reduction of NAND Flash Memory</a>
+<a class="button" href="" target="_blank">slides</a>
+<br /> Jinhua Cui, Weiguo Wu, Xingjun Zhang, Jianhang Huang, Yinfeng Wang
+<br /> IEEE 33rd International Conference on Massive Storage Systems and Technology (MSST¡¯16), Santa Clara, USA, 2016 
+</li></div>
 
-[6]. Jinhua Cui, Weiguo Wu, Shiqiang Nie,Jianhang Huang, Zhuang Hu, Nianjun Zou, and Yinfeng Wang. Exploiting Cross-Layer Hotness Identification to Improve Flash Memory System Performance. The 13th IFIP International Conference on Network and Parallel Computing (NPC), Xi'an, China, 2016: 17~28.
- <br><br>
+<div class="pub all conf"><li>
+<a href="https://csjhcui.github.io/research/VIOS.pdf">VIOS: A Variation-aware I/O Scheduler for Flash-based Storage Systems</a>
+<a class="button" href="" target="_blank">slides</a>
+<br /> Jinhua Cui, Weiguo Wu, Shiqiang Nie,Jianhang Huang, Zhuang Hu, Nianjun Zou, and Yinfeng Wang
+<br /> The 13th IFIP International Conference on Network and Parallel Computing (NPC¡¯16), Xi'an, China, 2016: 3~16 
+</li></div>
 
-[7]. Jinhua Cui, Weiguo Wu, Nianjun Zou, Yinfeng Wang. Accelerating Master-slave Databases Launched on LDPC-induced Solid State Drives with Improved Efficiency and Reliability. IEICE Electronics Express, 2016,13 (13): 1~7.
- <br><br>
 
-[8]. Jinhua Cui, Weiguo Wu, Yinfeng Wang. Buffer Replacement Algorithm for Flash Database Systems based on MWM. Huangzhong University of Science and Technology (Natural Science Edition), 2015, 43 (3): 118~122.
- <br><br>
+<div class="pub all conf"><li>
+<a href="https://csjhcui.github.io/research/NPC2.pdf">Exploiting Cross-Layer Hotness Identification to Improve Flash Memory System Performance</a>
+<a class="button" href="" target="_blank">slides</a>
+<br /> Jinhua Cui, Weiguo Wu, Shiqiang Nie,Jianhang Huang, Zhuang Hu, Nianjun Zou, and Yinfeng Wang
+<br /> The 13th IFIP International Conference on Network and Parallel Computing (NPC¡¯16), Xi'an, China, 2016: 17~28 
+</li></div>
 
-[9]. Jinhua Cui, Weiguo Wu, Yinfeng Wang and Zhangfeng Duan. PT-LRU: A Probabilistic Page Replacement Algorithm for NAND Flash-based Consumer Electronics. IEEE Transactions on Consumer Electronics, UK., 2014, 60 (4): 614~622.
- <br><br>
-  </font></font>
-</p>
+
+<div class="pub all journal"><li>
+<a href="https://csjhcui.github.io/research/IEICE.pdf">Accelerating Master-slave Databases Launched on LDPC-induced Solid State Drives with Improved Efficiency and Reliability</a>
+<br /> Jinhua Cui, Weiguo Wu, Nianjun Zou, Yinfeng Wang
+<br /> IEICE Electronics Express, 2016,13 (13): 1~7
+</li></div>
+
+<div class="pub all journal"><li>
+<a href="https://csjhcui.github.io/research/MWMLRU.pdf">Buffer Replacement Algorithm for Flash Database Systems based on MWM</a>
+<br /> Jinhua Cui, Weiguo Wu, Yinfeng Wang
+<br /> Huangzhong University of Science and Technology (Natural Science Edition), 2015, 43 (3): 118~122
+</li></div>
+
+<div class="pub all journal"><li>
+<a href="https://csjhcui.github.io/research/PTLRU.pdf">PT-LRU: A Probabilistic Page Replacement Algorithm for NAND Flash-based Consumer Electronics.</a>
+<br /> Jinhua Cui, Weiguo Wu, Yinfeng Wang and Zhangfeng Duan
+<br /> IEEE Transactions on Consumer Electronics, UK., 2014, 60 (4): 614~622
+</li></div>
+
+<div class="pub all conf"><li>
+<a href="https://csjhcui.github.io/research/CIT.pdf">Performance Rediction Model in Heterogeneous Mapreduce Environment</a>
+<a class="button" href="" target="_blank">slides</a>
+<br /> Yuanquan Fan, Weiguo Wu, YunLong Xu, Yangjie Cao, Qian Li, Jinhua Cui, Zhangfeng Duan
+<br /> IEEE International Conference on Computer and Information Technology (CIT¡¯14), 2014, 240~245
+</li></div>
 
 
 </div>
 <p></p>
 <p><font face="Times New Roman"><a href="#top">Top</a> </font></p>
 <hr>
+
+
+
 
 <p class="style7 style8"><font face="Times New Roman"><strong><a name="Honorables Awarded"></a>
 <b><font color="#000000" size="5">Honors</font></b></strong></font></p><p class="style4"><font face="Times New Roman" size="4">
@@ -129,11 +335,10 @@ I am an Assistant Professor in the School of Computer Science and Technology at 
 <p class="style4"><font face="Times New Roman" size="4">
 </font></p>
 
-<li style=""><font face="Times New Roman" size="4">Source code for SSDsim
-  </font></li>
+<li style=""><font face="Times New Roman" size="4"><b style = "background-color:Khaki; color:IndianRed"> Source code for <a href="">SSDsim</a></b></font></li>
 
 <font face="Times New Roman" size="4">
-<strong>SSDsim</strong> is an event-driven simulator that accurately models modern SSDs. The accuracy of SSDSim has been validated via hardware prototyping. In this version, we fixed some bugs of the origin version.</strong></i></p></font>  
+<strong>SSDsim</strong> is an event-driven SSD simulator published by Yang Hu. The accuracy of SSDSim has been validated via hardware prototyping. In this version, we fixed some bugs of the origin version. Please cite his accompanying <a href="https://dl.acm.org/citation.cfm?id=1995912">article</a> if you would like to use or build upon this tool.</font>  
  
 
 
@@ -148,10 +353,9 @@ I am an Assistant Professor in the School of Computer Science and Technology at 
 <p class="style7 style8"><font face="Times New Roman"><strong><a name="Professional Services"></a>
 <b><font color="#000000" size="5">Services</font></b></strong></font></p>	
 	<font size="4">
-<li style="">Reviewer for journals: IEEE Access</li></font>
-	<font size="4">
-<li style="">Reviewer for conferences: CECNet2017</li></font>	
-	<font size="4">
+<li style=""><font face="Times New Roman" size="4">Reviewer for journals: IEEE Access
+  </font></li>
+<li style=""><font face="Times New Roman" size="4">Reviewer for conferences: CECNet2017</font></li>
 </font>
 	<br>
 <p><font face="Times New Roman">&nbsp;<a href="#top">Top</a> </font></p>
