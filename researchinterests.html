@@ -170,7 +170,7 @@
 
 <font face="Times New Roman" size="4">
 
-<li style=""><font face="Times New Roman" size="4">Flash Memory and Non-Volatile Memory Storage Systems</font></li>
+<li style="margin-top:24pt; margin-bottom:8pt;"><font face="Times New Roman" size="4"><strong>Flash Memory and Non-Volatile Memory Storage Systems</font></strong></li>
 
 Flash memory based solid-state drives (SSDs) are widely adopted in the modern computer system, ranging from mobile devices to servers in data centers, due to their better read and write performance and lower power consumption over traditional mechanical hard drives(HDDs). In flash memory industry, three-dimensional (3D) NAND flash is one of the most prospective advances. While the capacity of 3D flash memory grows dramatically, the performance and reliability problems of 3D flash based storage system are also quickly exaggerated. How to resolve new constraints of 3D flash memory chips, such as severe program disturbance, and performance/reliability degradation issues provides strong motivation of this research direction. Our current effort in this direction includes the following research topics:
 
@@ -188,4 +188,26 @@ style='mso-list:Ignore'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp
 tab-stops:list 36.0pt'><![if !supportLists]><span lang=EN-US><span
 style='mso-list:Ignore'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]><span lang=EN-US>System design of other new type non-volatile memories, such as 3D XPoint</span></p>
+
+
+<li style="margin-top:30pt; margin-bottom:8pt;"><font face="Times New Roman" size="4"><strong>CXL-Enabled Processing-in-Storage for Large Language Model Inference</font></strong></li>
+
+Large language model (LLM) inference has shifted the performance bottleneck from computation to memory capacity. The key-value (KV) cache grows linearly with context length and with the number of concurrent requests, and in long-context serving it quickly exceeds what HBM and DRAM can hold. Compute Express Link (CXL) attached flash memory offers terabyte-scale capacity at a latency close to that of memory, and therefore opens a new path for extending the memory hierarchy. Flash, however, is not merely a slow memory. Erase-before-write, page-granular access, limited endurance, and die-level internal parallelism all interact with the access patterns of attention and autoregressive decoding, and existing systems treat the device as a block interface that leaves this structure unexploited. Our work turns these physical properties from passive constraints into active design parameters, and studies how cache placement, offloading granularity, and scheduling should be co-designed with the CXL interconnect and the internal organization of the flash array. Research topics such as:
+
+<p style='margin-left:60.0pt;text-indent:-18.0pt;mso-list:l1 level1 lfo5;
+tab-stops:list 36.0pt'><![if !supportLists]><span lang=EN-US><span
+style='mso-list:Ignore'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-US>Cross-layer performance models that relate attention access patterns, CXL transaction behavior, and flash media characteristics</span></p>
+
+<p style='margin-left:60.0pt;text-indent:-18.0pt;mso-list:l1 level1 lfo5;
+tab-stops:list 36.0pt'><![if !supportLists]><span lang=EN-US><span
+style='mso-list:Ignore'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-US>Data layout and placement that jointly exploit KV cache semantics and the physical structure of flash</span></p>
+
+
+<p style='margin-left:60.0pt;text-indent:-18.0pt;mso-list:l1 level1 lfo5;
+tab-stops:list 36.0pt'><![if !supportLists]><span lang=EN-US><span
+style='mso-list:Ignore'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-US>Computation offloading and dynamic resource scheduling for incremental cache updates and near-storage attention</span></p>
+
 </body></html>
